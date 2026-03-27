@@ -118,14 +118,24 @@
           </a>
         </div>
 
-        <!-- Mobile menu button (visual only for this static demo) -->
+        <!-- Mobile menu button -->
         <div class="md:hidden flex items-center">
-          <button class="text-slate-600 hover:text-slate-900 focus:outline-none">
+          <button id="mobile-menu-btn" class="text-slate-600 hover:text-slate-900 focus:outline-none">
             <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
             </svg>
           </button>
         </div>
+      </div>
+    </div>
+    
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white/95 backdrop-blur-md border-b border-slate-200">
+      <div class="px-4 pt-2 pb-6 space-y-2">
+        <a href="#hero" class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:text-brand-600 hover:bg-slate-50">Início</a>
+        <a href="#portoes" class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:text-brand-600 hover:bg-slate-50">Produtos</a>
+        <a href="#servicos" class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:text-brand-600 hover:bg-slate-50">Serviços</a>
+        <a href="#contacto" class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:text-brand-600 hover:bg-slate-50">Contacto</a>
       </div>
     </div>
   </header>
@@ -201,7 +211,7 @@
         <!-- Product 1 -->
         <article
           class="group relative bg-white rounded-2xl border border-slate-200 overflow-hidden card-transition card-glow flex flex-col h-full">
-          <div class="image-zoom-container aspect-[4/3] bg-slate-100 relativ shrink-0">
+          <div class="image-zoom-container aspect-[4/3] bg-slate-100 relative shrink-0">
             <img src="portao-de-correr-madeira.jpg" alt="Portão de correr em madeira"
               class="image-zoom w-full h-full object-cover">
             <div class="absolute inset-0 bg-slate-900/10 group-hover:bg-transparent transition-colors duration-300">
@@ -341,7 +351,8 @@
         <article
           class="group relative bg-white rounded-2xl border border-slate-200 overflow-hidden card-transition card-glow flex flex-col h-full">
           <div class="image-zoom-container aspect-[4/3] bg-slate-100 relative shrink-0">
-            <img src="portao-de-grade.png" alt="Grade de enrolar" class="image-zoom w-full h-full object-cover">
+            <img src="portao-de-grade.png" alt="Grade de enrolar"
+              class="image-zoom w-full h-full object-cover">
             <div class="absolute inset-0 bg-slate-900/10 group-hover:bg-transparent transition-colors duration-300">
             </div>
           </div>
@@ -350,6 +361,59 @@
             <p class="text-sm text-slate-600 mb-4 flex-1">
               Disponíveis em versão manual ou totalmente automática, proporcionam segurança máxima para vitrines
               comerciais fora de horas.
+            </p>
+            <div class="pt-4 border-t border-slate-100 flex items-center justify-between mt-auto">
+              <span class="text-xs font-medium text-slate-500 flex items-center gap-1">
+                <svg class="w-4 h-4 text-brand-500" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                    clip-rule="evenodd"></path>
+                </svg>
+                Personalizável (Cores RAL)
+              </span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product 7 -->
+        <article
+          class="group relative bg-white rounded-2xl border border-slate-200 overflow-hidden card-transition card-glow flex flex-col h-full">
+          <div class="image-zoom-container aspect-[4/3] bg-slate-100 relative shrink-0">
+            <img src="portao-de-madeira.png" alt="Portão de batente em madeira" class="image-zoom w-full h-full object-cover">
+            <div class="absolute inset-0 bg-slate-900/10 group-hover:bg-transparent transition-colors duration-300">
+            </div>
+          </div>
+          <div class="p-6 flex-1 flex flex-col">
+            <h3 class="text-lg font-bold text-slate-900 mb-2">Portão de batente em madeira</h3>
+            <p class="text-sm text-slate-600 mb-4 flex-1">
+              Portões de batente em madeira são ideais para quem busca um visual clássico e elegante, com a
+              durabilidade e resistência da madeira.
+            </p>
+            <div class="pt-4 border-t border-slate-100 flex items-center justify-between mt-auto">
+              <span class="text-xs font-medium text-slate-500 flex items-center gap-1">
+                <svg class="w-4 h-4 text-brand-500" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                    clip-rule="evenodd"></path>
+                </svg>
+                Acabamento Premium
+              </span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product 8 -->
+        <article
+          class="group relative bg-white rounded-2xl border border-slate-200 overflow-hidden card-transition card-glow flex flex-col h-full">
+          <div class="image-zoom-container aspect-[4/3] bg-slate-100 relative shrink-0">
+            <img src="cancela.png" alt="Cancela" class="image-zoom w-full h-full object-cover">
+            <div class="absolute inset-0 bg-slate-900/10 group-hover:bg-transparent transition-colors duration-300">
+            </div>
+          </div>
+          <div class="p-6 flex-1 flex flex-col">
+            <h3 class="text-lg font-bold text-slate-900 mb-2">Cancela</h3>
+            <p class="text-sm text-slate-600 mb-4 flex-1">
+              As cancelas são ideais para controlar o acesso de veículos em condomínios, empresas e estacionamentos.
             </p>
             <div class="pt-4 border-t border-slate-100 flex items-center justify-between mt-auto">
               <span class="text-xs font-medium text-slate-500 flex items-center gap-1">
@@ -523,6 +587,45 @@
     </div>
   </section>
 
+  <script>
+    // Mobile menu toggle
+    const btn = document.getElementById('mobile-menu-btn');
+    const menu = document.getElementById('mobile-menu');
+
+    if (btn && menu) {
+      btn.addEventListener('click', () => {
+        menu.classList.toggle('hidden');
+      });
+
+      menu.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+          menu.classList.add('hidden');
+        });
+      });
+    }
+
+    // Simple scroll reveal animation
+    const observerOptions = {
+      root: null,
+      rootMargin: '0px',
+      threshold: 0.1
+    };
+
+    const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animate-fade-in-up');
+          entry.target.style.opacity = '1';
+          observer.unobserve(entry.target);
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('article, .bg-slate-50.rounded-2xl').forEach(el => {
+      el.style.opacity = '0';
+      observer.observe(el);
+    });
+  </script>
 </body>
 
 </html>
